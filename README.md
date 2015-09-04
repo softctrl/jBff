@@ -2,7 +2,7 @@
 A little BrainF**k interpreter in Java.
 
 ```java
-StringBuilder code = new StringBuilder();
+		StringBuilder code = new StringBuilder();
 		code.append("+++++ +++++             initialize counter (cell #0) to 10\n");
 		code.append("[                       use loop to set 70/100/30/10\n");
 		code.append("    > +++++ ++          add  7 to cell #1\n");
@@ -29,12 +29,12 @@ StringBuilder code = new StringBuilder();
 Now you only need to call:
 
 ```java
-(new SCBrainFkInterpreter()).proccess(code.toString());
+		(new SCBrainFkInterpreter()).proccess(code.toString());
 ```
 Then, this message will be printed out:
 
 ```
-Hello World!
+		Hello World!
 
 ```
 
