@@ -31,3 +31,11 @@ Now you only need to call:
 ```java
 (new SCBrainFkInterpreter()).proccess(code.toString());
 ```
+Then, this message will be printed out:
+
+```
+Hello World!
+
+```
+
+Thanks.
