@@ -88,7 +88,7 @@ public class SCBrainFkInterpreter {
 	};
 
 	private static final byte ZERO = 0;
-//	private static final String TOKENS = "[\\<\\>+-\\.,\\[\\]]";
+	// private static final String TOKENS = "[\\<\\>+-\\.,\\[\\]]";
 	private static final String NON_TOKENS = "[^\\<\\>+-\\.,\\[\\]]";
 
 	private List<Byte> memory = new ArrayList<Byte>();
@@ -259,6 +259,18 @@ public class SCBrainFkInterpreter {
 	 */
 	private static final StringBuilder getOnlyCode(final String code) {
 		return new StringBuilder(code.replaceAll(NON_TOKENS, ""));
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public final SCBrainFkInterpreter reset() {
+		this.memory.clear();
+		this.address = -1;
+		this.length = 0;
+		this.dbg = DEBUG_OFF;
+		return this;
 	}
 
 	public SCBrainFkInterpreter proccess(String code) {
