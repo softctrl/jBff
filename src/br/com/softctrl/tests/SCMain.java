@@ -54,7 +54,7 @@ public class SCMain {
 		code.append("> + .                   print '!'\n");
 		code.append("> .                     print '\n'\n");
 
-		(new SCBrainFkInterpreter()).proccess(code.toString());
+		(new SCBrainFkInterpreter()).setDebugMode(false).proccess(code.toString());
 	}
 
 }
